@@ -6,6 +6,7 @@ import {
   Text,
   View,
   VrButton,
+  Image
 } from 'react-360';
 
 class Background extends React.Component {
@@ -61,7 +62,9 @@ class Rooms extends React.Component {
             <Text style={styles.buttonText}>{'<'}</Text>
           </VrButton>
           <View>
-            <Text style={styles.title}>Vaihda huonetta:</Text>
+            <Text style={styles.title}>Töölön Sinisten virtuaalikolo</Text>
+            <Text style={styles.title}>Vaihda huonetta nuolilla</Text>
+            <Image source={{uri: current.mapUri}} style={{width: 300, height: 150, marginLeft: 60}} />
             <Text style={styles.title}>{current.title}</Text>
           </View>
           <VrButton onClick={this._nextPhoto} style={styles.button}>
