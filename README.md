@@ -15,4 +15,4 @@ Make build:
 ```sh
 $ npm run bundle
 ```
-Copy contains of ``./build`` to your server root and make drirectory ``./static_assets`` for all image assets.
+Copy contains of ``./build`` to your server root and make directory ``./static_assets`` for all image assets.

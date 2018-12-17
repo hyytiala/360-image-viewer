@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     width: 1000,
   },
   controls: {
-    backgroundColor: 'rgba(37, 50, 100, 0.7)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -99,14 +99,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   button: {
-    backgroundColor: '#27AAE1',
+    backgroundColor: '#c0c0d0',
     borderRadius: 5,
     width: 50,
     height: 50,
   },
   buttonText: {
     textAlign: 'center',
-    color: '#253264',
+    color: '#000000',
     fontSize: 30,
     fontWeight: 'bold',
   },
