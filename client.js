@@ -17,13 +17,13 @@ function init(bundle, parent, options = {}) {
     label,
   );
   const closet = new Surface(300, 300, Surface.SurfaceShape.Flat);
-  closet.setAngle(10, -0.1);
+  closet.setAngle(10.7, -0.1);
   r360.renderToSurface(
     r360.createRoot('closet'),
     closet,
   );
   const bench = new Surface(300, 300, Surface.SurfaceShape.Flat);
-  bench.setAngle(15, -0.1);
+  bench.setAngle(15, -0.35);
   r360.renderToSurface(
     r360.createRoot('bench'),
     bench,

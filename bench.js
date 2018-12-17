@@ -13,7 +13,7 @@ class label extends React.Component {
     return (
       <View style={styles.greetingBox}>
         <Text style={styles.greeting}>
-          Ohjelmakaappi
+          Penkki
         </Text>
       </View>
     );
@@ -21,14 +21,6 @@ class label extends React.Component {
 };
 
 const styles = StyleSheet.create({
-  panel: {
-    // Fill the entire surface
-    width: 1000,
-    height: 600,
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   greetingBox: {
     padding: 20,
     backgroundColor: '#000000',

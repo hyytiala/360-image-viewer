@@ -7,6 +7,7 @@ import {
   VrButton,
 } from 'react-360';
 import label from './label'
+import bench from './bench'
 
 export default class kolo extends React.Component {
   // Our component will keep track of this state
@@ -52,4 +53,4 @@ const styles = StyleSheet.create({
 
 AppRegistry.registerComponent('label', () => kolo);
 AppRegistry.registerComponent('closet', () => label);
-AppRegistry.registerComponent('bench', () => label);
+AppRegistry.registerComponent('bench', () => bench);
