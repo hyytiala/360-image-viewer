@@ -1,41 +1,24 @@
-// This file contains the boilerplate to execute your React app.
-// If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance, Location, Surface} from 'react-360-web';
+import {ReactInstance} from 'react-360-web';
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
-    // Add custom options here
     fullScreen: true,
     ...options,
   });
 
-  const label = new Surface(300, 300, Surface.SurfaceShape.Flat);
-  label.setAngle(-0.9, -0.1);
   r360.renderToSurface(
-    r360.createRoot('label'),
-    label,
+    r360.createRoot('kolo', {
+      photos: [
+        {uri: './static_assets/sudarihuone.jpg', title: 'Sudenpentuhuone', format: '2D'},
+        {uri: './static_assets/kantti.jpg', title: 'Kantti', format: '2D'},
+        {uri: './static_assets/roundroom.jpg', title: 'Pyöreähuone', format: '2D'},
+        // Add your own 180 / 360 photos to this array,
+        // with an associated title and format
+      ],
+    }),
+    r360.getDefaultSurface(),
   );
-  const closet = new Surface(300, 300, Surface.SurfaceShape.Flat);
-  closet.setAngle(10.7, -0.1);
-  r360.renderToSurface(
-    r360.createRoot('closet'),
-    closet,
-  );
-  const bench = new Surface(300, 300, Surface.SurfaceShape.Flat);
-  bench.setAngle(15, -0.35);
-  r360.renderToSurface(
-    r360.createRoot('bench'),
-    bench,
-  );
-  // Render your app content to the default cylinder surface
-  r360.renderToSurface(
-    r360.createRoot('kolo', { /* initial props */ }),
-    r360.getDefaultSurface()
-  );
-
-  // Load the initial environment
-  r360.compositor.setBackground('./static_assets/sudarihuone.jpg');
 }
 
 window.React360 = {init};
