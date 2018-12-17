@@ -3,6 +3,8 @@
 React application created for viewing 360 photos of our scout troop's base
 Made with [React 360](https://facebook.github.io/react-360/)
 
+[Demo](https://www.hyytiala.fi/kolo)
+
 Run locally:
 ```sh
 $ npm install
